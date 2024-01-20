@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72729A53-3A0E-4100-9411-342F800555E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAZA_ID_ZLECENIA_SELECT.cs">
+      <DependentUpon>BAZA_ID_ZLECENIA_SELECT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_ID_ZLECENIA_SELECT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_ID_ZLECENIA_SELECT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet6.cs">
+      <DependentUpon>BAZA_MALARNIADataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet7.cs">
+      <DependentUpon>BAZA_MALARNIADataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAZA_MALARNIADataSet91.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAZA_MALARNIADataSet91.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieZlecenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieZlecenia.Designer.cs">
+      <DependentUpon>DodawanieZlecenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaZlecenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaZlecenia.Designer.cs">
+      <DependentUpon>EdycjaZlecenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WYSZUKANIE_OPERACJI_ZLECENIA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WYSZUKANIE_OPERACJI_ZLECENIA.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DodawanieZlecenia.resx">
+      <DependentUpon>DodawanieZlecenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdycjaZlecenia.resx">
+      <DependentUpon>EdycjaZlecenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BAZA_ID_ZLECENIA_SELECT.xsc">
+      <DependentUpon>BAZA_ID_ZLECENIA_SELECT.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_ID_ZLECENIA_SELECT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_ID_ZLECENIA_SELECT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_ID_ZLECENIA_SELECT.xss">
+      <DependentUpon>BAZA_ID_ZLECENIA_SELECT.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet.xss">
+      <DependentUpon>BAZA_MALARNIADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet1.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet1.xss">
+      <DependentUpon>BAZA_MALARNIADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet10.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet10.xss">
+      <DependentUpon>BAZA_MALARNIADataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet11.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet11.xss">
+      <DependentUpon>BAZA_MALARNIADataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet12.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet12.xss">
+      <DependentUpon>BAZA_MALARNIADataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet13.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet13.xss">
+      <DependentUpon>BAZA_MALARNIADataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet14.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet14.xss">
+      <DependentUpon>BAZA_MALARNIADataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet15.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet15.xss">
+      <DependentUpon>BAZA_MALARNIADataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet16.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet16.xss">
+      <DependentUpon>BAZA_MALARNIADataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet17.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet17.xss">
+      <DependentUpon>BAZA_MALARNIADataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet18.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet18.xss">
+      <DependentUpon>BAZA_MALARNIADataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet19.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet19.xss">
+      <DependentUpon>BAZA_MALARNIADataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet2.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet2.xss">
+      <DependentUpon>BAZA_MALARNIADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet20.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet20.xss">
+      <DependentUpon>BAZA_MALARNIADataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet21.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet21.xss">
+      <DependentUpon>BAZA_MALARNIADataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet22.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet22.xss">
+      <DependentUpon>BAZA_MALARNIADataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet23.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet23.xss">
+      <DependentUpon>BAZA_MALARNIADataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet24.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet24.xss">
+      <DependentUpon>BAZA_MALARNIADataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet25.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet25.xss">
+      <DependentUpon>BAZA_MALARNIADataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet26.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet26.xss">
+      <DependentUpon>BAZA_MALARNIADataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet3.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet3.xss">
+      <DependentUpon>BAZA_MALARNIADataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet4.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet4.xss">
+      <DependentUpon>BAZA_MALARNIADataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet5.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet5.xss">
+      <DependentUpon>BAZA_MALARNIADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet6.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet6.xss">
+      <DependentUpon>BAZA_MALARNIADataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet7.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet7.xss">
+      <DependentUpon>BAZA_MALARNIADataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet8.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet8.xss">
+      <DependentUpon>BAZA_MALARNIADataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet91.xsc">
+      <DependentUpon>BAZA_MALARNIADataSet91.xsd</DependentUpon>
+    </None>
+    <None Include="BAZA_MALARNIADataSet91.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAZA_MALARNIADataSet91.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAZA_MALARNIADataSet91.xss">
+      <DependentUpon>BAZA_MALARNIADataSet91.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WYSZUKANIE_OPERACJI_ZLECENIA.xsc">
+      <DependentUpon>WYSZUKANIE_OPERACJI_ZLECENIA.xsd</DependentUpon>
+    </None>
+    <None Include="WYSZUKANIE_OPERACJI_ZLECENIA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WYSZUKANIE_OPERACJI_ZLECENIA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WYSZUKANIE_OPERACJI_ZLECENIA.xss">
+      <DependentUpon>WYSZUKANIE_OPERACJI_ZLECENIA.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
