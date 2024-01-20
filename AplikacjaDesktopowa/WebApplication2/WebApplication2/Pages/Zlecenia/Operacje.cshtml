@@ -1,0 +1,37 @@
+﻿@page
+@model WebApplication2.Pages.Zlecenia.OperacjeModel
+@{
+}
+
+<h2> Lista Operacji do Zlecenia</h2>
+		<a class="btn btn-primary btn-sm" href="/"> < </a>
+
+	
+	<table class="table table-responsive table-sm">
+		<thead>
+			<tr>
+				<th>Id Operacji</th>
+				<th>Nazwa Operacji</th>
+				<th>Data Operacji</th>
+				<th>Czas Trwania</th>
+				<th>Zuzycie Materiałów</th>
+				<th>Operacje</th>
+			</tr>
+		</thead>
+		<tbody>
+		@foreach (var item in Model.listOperacji)
+			{
+				<tr>
+					<td>@item.IdOperacji</td>
+					<td>@item.NazwaOperacji</td>
+					<td>@item.DataOperacji</td>
+					<td>@item.CzasOperacji</td>
+					<td>@item.ZuzycieMaterialow</td>
+					<td>
+					<a class="btn btn-primary btn-sm" href="/Zlecenia/EdytujOperacje?id=@item.IdOperacji">Edytuj</a>
+					<a class="btn btn-primary btn-sm" href="/Zlecenia/UsunOperacje?id=@item.IdOperacji">Usuń</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>

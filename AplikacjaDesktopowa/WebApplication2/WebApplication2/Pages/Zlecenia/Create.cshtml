@@ -1,0 +1,132 @@
+﻿@page
+@model WebApplication2.Pages.Zlecenia.CreateModel
+@{
+}
+<br />
+<h2>Nowe Zlecenie!</h2>
+<form method="POST">
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Numer Zlecenia</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="NR_ZLECENIA" placeholder="F/24/01/0000" value="@Model.commisionInfo.NR_ZLECENIA"/>
+
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Numer Trawersy</label>
+		<div class="col-sm-6">
+			<input type="number" min="0" max="150" class="form-control" name="NR_TRAWERSY" placeholder="0" value="@Model.commisionInfo.NR_TRAWERSY"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Data Dostawy</label>
+		<div class="col-sm-6">
+			<input type="date" class="form-control" name="DATA_DOSTAWY" placeholder="16.01.2024" value="@Model.commisionInfo.DATA_DOSTAWY"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Data Realizacji</label>
+		<div class="col-sm-6">
+			<input type="date" class="form-control" name="DATA_REALIZACJI" placeholder="23.01.2024" value="@Model.commisionInfo.DATA_REALIZACJI"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Nazwa Wyrobu</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="NAZWA_WYROBU" placeholder="WZ0001" value="@Model.commisionInfo.NAZWA_WYROBU"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Uwagi</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="UWAGI" placeholder="Poprawka etc." value="@Model.commisionInfo.UWAGI"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Ilość Sztuk</label>
+		<div class="col-sm-6">
+			<input type="number" min="0" value='0' placeholder='0' class="form-control" name="ILOSC_SZTUK" value="@Model.commisionInfo.ILOŚĆ_SZTUK"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Ilość M^2</label>
+		<div class="col-sm-6">
+			<input type="number" min="0" step='0.01' value='0.00' placeholder='0.00' class="form-control" name="ILOSC_M2" value="@Model.commisionInfo.ILOŚĆ_M2"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Podkład</label>
+		<div class="col-sm-6">
+			<input type="checkbox" name="PODKLAD" value="@Model.commisionInfo.PODKŁAD"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Śrut</label>
+		<div class="col-sm-6">
+			<input type="checkbox" name="SRUT" value="@Model.commisionInfo.ŚRUT"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Klient</label>
+		<select class="col-sm-6" name="KLIENT" value="@Model.commisionInfo.KLIENT">
+			@foreach (var item in Model.listKlient)
+			{
+				<option value="@item.KLIENTID">@item.KLIENT</option>
+			}
+		</select>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Dostawca Farby</label>
+		<select class="col-sm-6" name="DOSTAWCAFARBY" value="@Model.commisionInfo.DOSTAWCA_FARBY">
+			@foreach (var item in Model.listDostawca)
+			{
+				<option value="@item.DOSTAWCA_FARBYID">@item.DOSTAWCA_FARBY</option>
+			}
+		</select>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Kolor Farby</label>
+		<select class="col-sm-6" name="KOLORFARBY" value="@Model.commisionInfo.KOLOR_FARBY">
+			@foreach (var item in Model.listKolor)
+			{
+				<option value="@item.KOLOR_FARBYID">@item.KOLOR_FARBY</option>
+			}
+		</select>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Typ Farby</label>
+		<select class="col-sm-6" name="TYPFARBY" value="@Model.commisionInfo.TYP_FARBY">
+			@foreach (var item in Model.listTyp)
+			{
+				<option value="@item.TYP_FARBYID">@item.TYP_FARBY</option>
+			}
+		</select>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Powierzchnia</label>
+		<select class="col-sm-6" name="POWIERZCHNIA" value="@Model.commisionInfo.POWIERZCHNIA">
+			@foreach (var item in Model.listPowierzchnia)
+			{
+				<option value="@item.POWIERZCHNIAID">@item.POWIERZCHNIA</option>
+			}
+		</select>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Połysk</label>
+		<select class="col-sm-6" name="POLYSK" value="@Model.commisionInfo.POŁYSK">
+			@foreach (var item in Model.listPolysk)
+			{
+				<option value="@item.POŁYSKID">@item.POŁYSK</option>
+			}
+		</select>
+	</div>
+	<div class="row mb-3">
+		<div class="offset-sm-3 col-sm-3 d-grid">
+			<button type="submit" href="/" class="btn btn-primary">Dodaj</button>
+		</div>
+		<div class="col-sm-3 d-grid">
+			<a class="btn btn-outline-primary" href="/" role="button">Anuluj</a>
+		</div>
+	</div>
+	
+</form>

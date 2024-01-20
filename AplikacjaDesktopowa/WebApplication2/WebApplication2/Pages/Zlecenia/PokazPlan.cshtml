@@ -1,0 +1,56 @@
+﻿@page
+@model WebApplication2.Pages.Zlecenia.PokazPlanModel
+@{
+}
+<h2> Plan do Zlecenia</h2>
+<a class="btn btn-primary btn-sm" href="/Zlecenia"> < </a>
+
+
+<table class="table table-responsive table-sm">
+	<thead>
+		<tr>
+			<th>NR_ZLECENIA</th>
+			<th>DATA_DOSTAWY</th>
+			<th>DATA_REALIZACJI</th>
+			<th>NAZWA_WYROBU</th>
+			<th>UWAGI</th>
+			<th>ILOŚĆ_SZTUK</th>
+			<th>ILOŚĆ_M2</th>
+			<th>PODKŁAD</th>
+			<th>ŚRUT</th>
+			<th>NR_TRAWERSY</th>
+			<th>KLIENT</th>
+			<th>DOSTAWCA_FARBY</th>
+			<th>KOLOR_FARBY</th>
+			<th>TYP_FARBY</th>
+			<th>POWIERZCHNIA</th>
+			<th>POLYSK</th>
+			<th>STATUS</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listInfoZlecenPlan)
+		{
+			<tr>
+				<td>@item.NR_ZLECENIA</td>
+				<td>@item.DATA_DOSTAWY</td>
+				<td>@item.DATA_REALIZACJI</td>
+				<td>@item.NAZWA_WYROBU</td>
+				<td>@item.UWAGI</td>
+				<td>@item.ILOŚĆ_SZTUK</td>
+				<td>@item.ILOŚĆ_M2</td>
+				<td>@item.PODKŁAD</td>
+				<td>@item.ŚRUT</td>
+				<td>@item.NR_TRAWERSY</td>
+				<td>@item.KLIENT</td>
+				<td>@item.DOSTAWCA_FARBY</td>
+				<td>@item.KOLOR_FARBY</td>
+				<td>@item.TYP_FARBY</td>
+				<td>@item.POWIERZCHNIA</td>
+				<td>@item.POLYSK</td>
+				<td>@item.STATUS</td>
+			</tr>
+		}
+	</tbody>
+</table>
+

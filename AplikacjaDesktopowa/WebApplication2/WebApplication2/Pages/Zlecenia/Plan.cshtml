@@ -1,0 +1,30 @@
+﻿@page
+@model WebApplication2.Pages.Zlecenia.PlanModel
+@{
+}
+
+<h2> Lista Operacji do Zlecenia</h2>
+<a class="btn btn-primary btn-sm" href="/Index"> < </a>
+
+
+<table class="table table-responsive table-sm">
+	<thead>
+		<tr>
+			<th>Id Planu</th>
+			<th>Data Planu</th>
+			<th>Funkcjonalności</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listInfoPlan)
+		{
+			<tr>
+				<td>@item.IdPlanu</td>
+				<td>@item.DataPlanu</td>
+				<td>
+					<a class="btn btn-primary btn-sm" href="/Zlecenia/PokazPlan?id=@item.IdPlanu">Pokaz Plan</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

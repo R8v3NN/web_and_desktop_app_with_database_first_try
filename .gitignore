@@ -1,0 +1,11 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/24.11
+/AplikacjaDesktopowa
+/Baza_Malarnia
+/Komponent
+/TestowanieOprogramowania
+/gra
+/.gitignore

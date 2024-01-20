@@ -1,0 +1,45 @@
+﻿@page
+@model WebApplication2.Pages.Zlecenia.DodajOperacjeModel
+@{
+}
+<h2>Dodaj Nowa Operacje Do Zlecenia!</h2>
+<form method="POST">
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Operacja</label>
+		<select class="col-sm-6" name="OPERACJA">
+			@foreach (var item in Model.listOperacje)
+			{
+				<option value="@item.OPERACJAID">@item.OPERACJA</option>
+			}
+		</select>
+	</div>
+
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Data Operacji</label>
+		<div class="col-sm-6">
+			<input type="date" class="form-control" name="DATA_OPERACJI" placeholder="16.01.2024"/>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Czas Operacji</label>
+		<div class="col-sm-6">
+			<input type="number" min="0" value='0' placeholder='0' class="form-control" name="CZAS_OPERACJI" />
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-label">Zużycie Materiałów</label>
+		<div class="col-sm-6">
+			<input type="number" min="0" step='0.01' value='0.00' placeholder='0.00' class="form-control" name="ZUZYCIEMATERIALOW" />
+		</div>
+	</div>
+
+	<div class="row mb-3">
+		<div class="offset-sm-3 col-sm-3 d-grid">
+			<button type="submit" href="/" class="btn btn-primary">Dodaj Operacje</button>
+		</div>
+		<div class="col-sm-3 d-grid">
+			<a class="btn btn-outline-primary" href="/" role="button">Anuluj</a>
+		</div>
+	</div>
+
+</form>

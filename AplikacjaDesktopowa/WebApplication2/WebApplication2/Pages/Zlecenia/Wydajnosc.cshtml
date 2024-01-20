@@ -1,0 +1,36 @@
+﻿@page
+@model WebApplication2.Pages.Zlecenia.WydajnoscModel
+@{
+}
+<h2> Lista Operacji do Zlecenia</h2>
+<a class="btn btn-primary btn-sm" href="/Index"> < </a>
+
+<table class="table table-responsive table-sm">
+	<thead>
+		<tr>
+			<th>Numer Zlecenia</th>
+			<th>Wydajność Malowania Podkładu</th>
+			<th>Wydajność Malowania</th>
+			<th>Wydajność Śrutowania</th>
+			<th>Wydajność Przygotowania Detali</th>
+			<th>Wydajność Pakowania Zamówienia</th>
+			<th>Wydajność Zużycia Materiałów do Malowania</th>
+			<th>Wydajność Zużycia Materiałów do Malowania Podkładu</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.listWydajnosc)
+		{
+			<tr>
+				<td>@item.NRZLECENIA</td>
+				<td>@item.WydajnoscPodkladu</td>
+				<td>@item.WydajnoscMalowania</td>
+				<td>@item.WydajnoscSrutowania</td>
+				<td>@item.WydajnoscPrzygotowania</td>
+				<td>@item.WydajnoscPakowania</td>
+				<td>@item.WydajnoscZużyciaMateriałówMalowania</td>
+				<td>@item.WydajnośćZużyciaMateriałówPodkład</td>
+			</tr>
+		}
+	</tbody>
+</table>

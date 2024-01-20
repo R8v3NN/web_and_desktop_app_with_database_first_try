@@ -1,0 +1,25 @@
+﻿@page
+@using System.Data.SqlClient;
+@model WebApplication2.Pages.Zlecenia.UsunOperacjeModel
+@{
+	try
+	{
+		String id = Request.Query["id"].ToString();
+		string connectionString = "Data Source = localhost; Initial Catalog = BAZA_MALARNIA; Integrated Security = True";
+		using (SqlConnection connection = new SqlConnection(connectionString))
+		{
+			connection.Open();
+			String sql = "DELETE FROM DANE_OPERACJI WHERE ID_OPERACJI=@id";
+			using (SqlCommand command = new SqlCommand(sql, connection))
+			{
+				command.Parameters.AddWithValue("@id", id);
+				command.ExecuteNonQuery();
+			}
+		}
+	}
+	catch (Exception ex)
+	{
+
+	}
+	Response.Redirect("/Zlecenia/Operacje");
+}
